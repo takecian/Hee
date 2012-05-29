@@ -1,0 +1,16 @@
+へえ ～トリビアの泉～
+======================
+トリビアの泉を再現するウェブアプリ。
+ 
+使い方
+------
+
+Meteor を使っています。ソースコードを取得後、下記を実行してください。
+
+   git clone git@github.com:t-fujiki/Hee.git
+   cd hee
+   Meteor
+
+ライセンス
+----------
+Public domain.
