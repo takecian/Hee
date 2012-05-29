@@ -1,0 +1,32 @@
+<head>
+  <title>hee</title>
+</head>
+
+<body>
+<font size="50">トリビアの泉</font><br>
+  {{> hee}}
+  {{> scoreboard}}
+  {{> heeinput}}
+</body>
+
+<template name="hee">
+  <font size="44">合計 {{score}} へえ</font><br>  
+</template>
+
+<template name="heeinput">
+  名前：<input type="text" id="name"/>
+  <br>
+  <img id="image" src="./hee.png">
+
+  <br><br><br><br>
+  <input type="button" id="resetall" value="Reset"></input>
+  <input type="button" id="deleteall" value="DeleteAll"></input>
+</template>
+
+<template name="scoreboard">
+  <table>
+  {{#each heescore}}
+  <tr><td>{{name}}</td><td> {{score}}へえ</td></tr>
+  {{/each}}
+  </table>
+</template>
