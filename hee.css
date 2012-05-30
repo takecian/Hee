@@ -1,1 +1,34 @@
 /* CSS declarations go here */
+
+#board ul{
+margin: 0; 
+padding: 0; 
+list-style-position: inside;
+list-style-type: none;
+text-align:center;
+}
+
+#board li{ 
+display: inline; 
+padding: 0; 
+margin-right: 20px;
+margin-bottom: 20px; 
+float: left;
+}
+
+#board a{
+display: block; 
+border: 1px solid #474655;
+background-color: #fff;
+font-size: x-small;
+padding: 3px;
+text-decoration: none;
+color: #333;
+width: 100px; 
+margin: 1px;
+text-align: center;
+}
+#board a:hover{
+background-color: #BF5E5E;
+color: #fff;
+}

@@ -6,6 +6,7 @@
 <font size="50">トリビアの泉</font><br>
   {{> hee}}
   {{> scoreboard}}
+<br><br><br><br><br><br><br><br><br><br>
   {{> heeinput}}
   {{> heereset}}
 </body>
@@ -27,9 +28,9 @@
 </template>
 
 <template name="scoreboard">
-  <table>
+  <div id="board"><ul>
   {{#each heescore}}
-  <tr><td>{{name}}</td><td> {{score}}へえ</td></tr>
+  <li>{{name}}<br> {{score}}</li>
   {{/each}}
-  </table>
+  </ul></div>
 </template>
