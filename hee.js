@@ -24,7 +24,7 @@ if (Meteor.is_client) {
 	    {
 		if(info.score < 20)
 		    {
-		Counts.update({name: name}, {$inc: {score: 1}});
+			Counts.update({name: name}, {$inc: {score: 1}});
 		    }
 		else
 		    {
@@ -40,7 +40,22 @@ if (Meteor.is_client) {
         audio.play();
 	audio = new Audio(sound);
 	audio.load();
-    },
+    }
+  };
+    function TextChange(text){
+	if($('#name').val() == 'admin')
+	    {
+		$('#resetall').css({"visibility":"visible"});
+		$('#deleteall').css({"visibility":"visible"});
+	    }
+	else
+	    {
+		$('#resetall').css({"visibility":"hidden"});
+		$('#deleteall').css({"visibility":"hidden"});
+	    }
+    }
+
+  Template.heereset.events ={
       'click #resetall' : function (){
 	  Counts.update({}, {$set: {score: 0}}, {multi: true});
       },
