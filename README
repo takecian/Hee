@@ -7,7 +7,12 @@
 
 Meteor を使っています。ソースコードを取得後、下記を実行してください。
 
+   curl install.meteor.com | sh
    git clone git@github.com:t-fujiki/Hee.git
    cd hee
    Meteor
 
+Meteor
+------
+
+http://www.meteor.com/main
