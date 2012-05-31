@@ -1,5 +1,6 @@
 Counts = new Meteor.Collection("counts");
 hee = "hee";
+admin = "admin";
 sound = "hee.mp3";
 
 if (Meteor.is_client) {
@@ -13,12 +14,17 @@ if (Meteor.is_client) {
   };
 
   Template.scoreboard.heescore = function (){
-      return Counts.find({name: {$ne: hee}});
+      return Counts.find({name: {$nin: [hee,admin]}});
   };
 
   Template.heeinput.events = {
     'click img' : function () {
 	name = $('#name').val();
+        if(name == "")
+            {
+                alert('名前を入力してください。');
+                return;
+            }
 	var info = Counts.findOne({name: name});
 	if(info)   
 	    {
@@ -43,7 +49,7 @@ if (Meteor.is_client) {
     }
   };
     function TextChange(text){
-	if($('#name').val() == 'admin')
+	if($('#name').val() == admin)
 	    {
 		$('#resetall').css({"visibility":"visible"});
 		$('#deleteall').css({"visibility":"visible"});
