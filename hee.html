@@ -4,7 +4,7 @@
 
 <body>
 <center>
-<font size="50">トリビアの泉</font><br>
+<div id="title">阪田の泉</div><br>
   {{> hee}}
   {{> scoreboard}}
 <br><br><br><br><br><br><br><br><br><br>
@@ -14,7 +14,8 @@
 </body>
 
 <template name="hee">
-  <font size="44">合計 {{score}} へえ</font><br>  
+  <div id="total">合計 {{score}} へえ</div>
+  <br>  
 </template>
 
 <template name="heeinput">

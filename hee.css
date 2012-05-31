@@ -5,6 +5,20 @@ margin-left:50px;
 margin-right:50px;
 }
 
+#title {
+font-size:50px;
+text-shadow: 2px 2px 2px yellow;
+color: purple;
+font-weight: bold;
+}
+
+#total{
+font-size:60px;
+text-shadow: 2px 2px 2px gray;
+color: navy;
+font-weight: bold;
+}
+
 #board ul{
 margin: 0; 
 padding: 0; 

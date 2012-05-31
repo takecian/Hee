@@ -25,6 +25,11 @@ if (Meteor.is_client) {
                 alert('名前を入力してください。');
                 return;
             }
+        if(name == admin)
+	    {
+		return;
+	    }
+
 	var info = Counts.findOne({name: name});
 	if(info)   
 	    {
