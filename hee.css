@@ -1,43 +1,43 @@
 /* CSS declarations go here */
 
-body{
-margin-left:50px;
-margin-right:50px;
+body {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #title {
-font-size:50px;
-text-shadow: 2px 2px 2px yellow;
-color: purple;
-font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px yellow;
+    color: purple;
+    font-weight: bold;
 }
 
-#total{
-font-size:60px;
-text-shadow: 2px 2px 2px gray;
-color: navy;
-font-weight: bold;
+#total {
+    font-size: 60px;
+    text-shadow: 2px 2px 2px gray;
+    color: navy;
+    font-weight: bold;
 }
 
-#board ul{
-margin: 0; 
-padding: 0; 
-list-style-position: inside;
-list-style-type: none;
-text-align:center;
+#board ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: none;
+    text-align: center;
 }
 
-#board li{ 
-display: inline; 
-padding: 0; 
-width : 100px;
-margin-right: 10px;
-margin-bottom: 10px; 
-float: left;
-border:2px ridge #001111;
+#board li {
+    display: inline;
+    padding: 0;
+    width: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    border: 2px ridge #001111;
 }
 
 img#image:hover {
-cursor:pointer;    
+    cursor: pointer;
 }
 

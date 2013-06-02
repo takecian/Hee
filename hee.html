@@ -1,40 +1,61 @@
 <head>
-  <title>トリビアの泉</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        トリビアの泉
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
-
 <body>
-<center>
-<div id="title">トリビアの泉</div><br>
-  {{> hee}}
-  {{> scoreboard}}
-<br><br><br><br><br><br><br><br><br><br>
-  {{> heeinput}}
-  {{> heereset}}
-</center>
+    <center>
+        <div id="title">
+            トリビアの泉
+        </div>
+        <br>
+        {{> hee}} {{> scoreboard}}
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        {{> heeinput}} {{> heereset}}
+    </center>
 </body>
-
 <template name="hee">
-  <div id="total">合計 {{score}} へえ</div>
-  <br>  
+    <div id="total">
+        合計 {{score}} へえ
+    </div>
+    <br>
 </template>
-
-<template name="heeinput">
-  名前：<input type="text" id="name" onChange="TextChange(this)"/>
-  <br>
-  <img id="image" src="./hee.png">
-</template>
-
-<template name="heereset">
-  <br><br><br><br>
-  <input type="button" id="resetall" value="Reset" style="visibility:hidden"></input>
-  <input type="button" id="deleteall" value="DeleteAll" style="visibility:hidden"></input>
-</template>
-
 <template name="scoreboard">
-  <div id="board"><ul>
-  {{#each heescore}}
-  <li>{{name}}<br> {{score}}</li>
-  {{/each}}
-  </ul></div>
+    <div id="board">
+        <ul>
+            {{#each heescore}}
+            <li>
+                {{name}}
+                <br>
+                {{score}}
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</template>
+<template name="heeinput">
+    名前：
+    <input type="text" id="name" />
+    <br>
+    <img id="image" src="./hee.png">
+</template>
+<template name="heereset">
+    <br>
+    <br>
+    <br>
+    <br>
+    <input type="button" id="resetall" value="Reset" style="visibility:hidden">
+    </input>
+    <input type="button" id="deleteall" value="DeleteAll" style="visibility:hidden">
+    </input>
 </template>
